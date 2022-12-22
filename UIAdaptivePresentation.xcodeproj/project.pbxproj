@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		452E29352954DDB5006C9263 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452E29342954DDB5006C9263 /* StorageManager.swift */; };
+		452E29372954DFA3006C9263 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452E29362954DFA3006C9263 /* Contact.swift */; };
 		A8FC0E3A2347466F0002FD14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FC0E392347466F0002FD14 /* AppDelegate.swift */; };
 		A8FC0E3C2347466F0002FD14 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FC0E3B2347466F0002FD14 /* SceneDelegate.swift */; };
 		A8FC0E3E2347466F0002FD14 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FC0E3D2347466F0002FD14 /* ContactListViewController.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		452E29342954DDB5006C9263 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		452E29362954DFA3006C9263 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		A8FC0E362347466F0002FD14 /* UIAdaptivePresentation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIAdaptivePresentation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8FC0E392347466F0002FD14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8FC0E3B2347466F0002FD14 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		452E29382954DFA7006C9263 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				452E29362954DFA3006C9263 /* Contact.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A8FC0E2D2347466F0002FD14 = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				A8FC0E4F23474D1C0002FD14 /* ViewControllers */,
+				452E29382954DFA7006C9263 /* Models */,
 				A8FC0E5623474F430002FD14 /* Services */,
 				A8FC0E5123474D970002FD14 /* StoryBoards */,
 				A8FC0E5223474DA30002FD14 /* Resources */,
@@ -108,6 +121,7 @@
 		A8FC0E5623474F430002FD14 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				452E29342954DDB5006C9263 /* StorageManager.swift */,
 				A8FC0E5723474F670002FD14 /* DataManager.swift */,
 			);
 			path = Services;
@@ -187,8 +201,10 @@
 				A8FC0E3E2347466F0002FD14 /* ContactListViewController.swift in Sources */,
 				A8FC0E5823474F670002FD14 /* DataManager.swift in Sources */,
 				A8FC0E3A2347466F0002FD14 /* AppDelegate.swift in Sources */,
+				452E29352954DDB5006C9263 /* StorageManager.swift in Sources */,
 				A8FC0E4E23474C680002FD14 /* NewContactViewController.swift in Sources */,
 				A8FC0E3C2347466F0002FD14 /* SceneDelegate.swift in Sources */,
+				452E29372954DFA3006C9263 /* Contact.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +351,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GBTTU32HS2;
 				INFOPLIST_FILE = UIAdaptivePresentation/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -353,6 +370,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GBTTU32HS2;
 				INFOPLIST_FILE = UIAdaptivePresentation/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

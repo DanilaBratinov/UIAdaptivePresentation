@@ -1,15 +1,7 @@
-//
-//  NewContactViewController.swift
-//  UIAdaptivePresentation
-//
-//  Created by Alexey Efimov on 04/10/2019.
-//  Copyright © 2019 Alexey Efimov. All rights reserved.
-//
-
 import UIKit
 
 protocol NewContactViewControllerDelegate {
-    func saveContact(_ contact: String)
+    func saveContact(_ contact: Contact)
 }
 
 class NewContactViewController: UIViewController {
@@ -49,11 +41,12 @@ class NewContactViewController: UIViewController {
     private func saveAndExit() {
         guard let firstName = firstNameTextField.text else { return }
         guard let lastName = lastNameTextField.text else { return }
-        let fullName = "\(firstName) \(lastName)"
-        DataManager.shared.saveContact(fullName)
         
-        delegate.saveContact(fullName)
+        let contact = Contact(name: firstName, surname: lastName)
         
+        StorageManager.shared.save(contact: contact)
+        
+        delegate.saveContact(contact)
         dismiss(animated: true)
     }
     
